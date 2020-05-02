@@ -1,0 +1,139 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body::before {
+  background: url("/images/bg-desktop.svg") no-repeat;
+  content: '';
+  display: block;
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1;
+}
+
+body {
+  background: #674baf;
+  height: 100vh;
+  width: 100vw;
+  overflow-x: hidden;
+  color: #fff;
+  font-family: "Open Sans", sans-serif;
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  width: 100%;
+  padding: 20px 50px;
+  font-size: 16px;
+}
+
+header {
+  width: 100%;
+  text-align: left;
+  margin-bottom: 50px;
+}
+
+header .logo {
+  width: 200px;
+}
+
+.content img {
+  width: 400px;
+  margin-bottom: 50px;
+}
+
+.content__text {
+  margin: auto;
+  width: 80%;
+  max-width: 700px;
+}
+
+.content__text__title {
+  font-family: "Poppins", sans-serif;
+}
+
+.content__text__desc {
+  line-height: 1.6;
+  margin: 20px auto 30px;
+}
+
+.content__text__btn {
+  border-radius: 30px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  width: 230px;
+  padding: 13px;
+  color: #674baf;
+  background: #fff;
+}
+
+footer {
+  position: absolute;
+  bottom: 50px;
+}
+
+footer i {
+  border-radius: 50%;
+  border: 1px solid #fff;
+  width: 35px;
+  height: 35px;
+  line-height: 35px !important;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+@media (min-width: 1200px) {
+  .container {
+    font-size: 20px;
+  }
+  .content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    width: 100%;
+    margin: 40px auto;
+    padding: 0;
+  }
+  .content img {
+    width: 50%;
+    margin: 0 50px 0 0;
+  }
+  .content__text {
+    margin: 50px auto;
+    text-align: left;
+  }
+  .content__text__btn {
+    width: 250px;
+    font-size: 1em;
+  }
+  footer {
+    bottom: 50px;
+    right: 60px;
+  }
+}
+/*# sourceMappingURL=style.css.map */
